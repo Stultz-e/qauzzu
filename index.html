@@ -39,7 +39,7 @@
               <a href="signup.html">Sign Up</a>
             </li>
             <li>
-              <a href="#" class="btn purple">Login</a>
+              <a href="#login-modal" class="btn purple modal-trigger">Login</a>
             </li>
             <li>
               <a href="https://facebook.com">
@@ -245,28 +245,51 @@
     <footer class="page-footer deep-purple lighten-1">
       <div class="container">
         <div class="row">
-          <div class="col 16 s12">
+          <div class="col l6 s12">
             <h5 class="white-text">About Us</h5>
             <p class="grey-text text-lighten-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum autem fugiat beatae excepturi esse. Asperiores ad repudiandae in perspiciatis atque.</p>
           </div>
-          <div class="col 14 offset-12 s12">
+          <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
               <li><a href="index.html" class="grey-text text-lighten-3"></a>Home</li>
               <li><a href="solutions.html" class="grey-text text-lighten-3"></a>Solution</li>
               <li><a href="signup.html" class="grey-text text-lighten-3"></a>Signup</li>
-
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright deep-purple darken-1">
         <div class="container">
-          Quzzu &copy; 2018
+          Quazzu &copy; 2018
           <a href="#!" class="grey-text text-lighten-4 right">Terms & Conditions</a>
         </div>
       </div>
     </footer>
+
+    <!--Login Modal-->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <h4>Accouunt Login</h4>
+        <p>Login to access your acount dashboard</p>
+        <form>
+          <div class="input-field">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password">
+            <label for="password">Password</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn grey">
+         <i class="fa fa-sync"></i> Reset Password</a>
+         <a href="#!" class="modal-action modal-close btn grey">
+            <i class="fa fa-lock"></i> Login</a>
+      </div>
+    </div>
 
 
   <!--Import jQuery before materialize.js-->
@@ -277,6 +300,7 @@
       // Custom JS & jQuery here
       $('.carousel.carousel-slider').carousel({fullWidth: true});
       $('.button-collapse').sideNav();
+      $('.modal').modal();
     });
   </script>
 </body>

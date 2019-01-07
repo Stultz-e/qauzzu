@@ -69,6 +69,11 @@
   background: rgba(112, 81, 176, 0.9);
 }
 
+.btn-extend {
+  display: block;
+  width: 100%;
+}
+
 @media(min-width:600px) {
   .section-podcast a { 
     margin-top: 3rem;
